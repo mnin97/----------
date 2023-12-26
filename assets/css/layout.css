@@ -363,3 +363,25 @@
   padding: 0;
   background: none;
 }
+
+.fix-top {
+  position: fixed;
+  bottom: -100px;
+  left: 50%;
+  margin-left: 600px;
+  opacity: 0;
+  transition: 1s;
+  z-index: 1000000;
+}
+
+.fix-top.on {
+  opacity: 1;
+  bottom: 98px;
+}
+
+.fix-top .btn-top {
+  display: block;
+  width: 34px;
+  height: 34px;
+  background: url(https://www.seoul.go.kr/res_newseoul/images/btn_top.png);
+}
